@@ -1,0 +1,11 @@
+<template>
+    
+<lightning-card title="loop">
+    <template for:each={arr} for:item="ab">
+    <p key={ab.id}> {ab.name} = {ab.designation} </p>
+    </template>
+
+</lightning-card>
+
+
+</template>

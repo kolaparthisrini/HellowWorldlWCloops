@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Progress Bar..">
+         <div id="bardiv"> 
+            <label for="name">Enter your percentage:</label>
+             <input type="number" min="0" max="100" name="percentage" onkeyup={barprogress} value={percentage}></input>
+
+         </div>
+         <div class="ch">
+          <c-barchildtest percentage={percentage}></c-barchildtest>
+         </div>
+
+    </lightning-card>
+</template>

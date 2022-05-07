@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-button  label="Display" value="Pls Click" onclick={getCurrentPrice}>
+        </lightning-button>
+    
+    <table border="1">
+        <template if:true={myrestobj} for:each={myrestobj} for:item="repo">
+    <tr key={repo.id}>
+<td>Previous: {repo.priceChange}</td>
+<td>Change: {repo.weightedAvgPrice}</td>
+</tr>       
+    </template>
+</table>
+    </lightning-card>
+
+</template>
