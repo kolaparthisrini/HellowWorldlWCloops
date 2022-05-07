@@ -1,0 +1,13 @@
+<template>
+<lightning-card>
+<lightning-button label="Get Data" onclick={getmydata}></lightning-button>
+<table border="1">
+<template if:true={myresponse} for:each={myresponse} for:item="repos1">
+<tr key={repos1.id}>
+<td> priceChange = {repos1.priceChange}</td>
+<td> weightedAvgPrice = {repos1.weightedAvgPrice}</td>
+</tr>
+</template>
+</table>
+</lightning-card>
+ </template>
