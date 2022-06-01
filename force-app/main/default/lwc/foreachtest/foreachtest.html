@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="ForEach">
+        <template if:false={status} title="abcd">
+          <h1>Dextara Digital,Hyderabad</h1>
+        </template>
+    <template for:each={con} for:item="conob">
+        <li key={conob.Id}>{conob.FirstName}</li>
+    </template>
+    </lightning-card>
+</template>

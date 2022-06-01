@@ -1,0 +1,56 @@
+<template>
+  <lightning-card title=" Simple Calculator" icon-name="standard:number_input">
+    <div>
+      <lightning-input
+        label="Variable A"
+        type="number"
+        name="a"
+        required
+        onchange={hanldled}
+      ></lightning-input>
+      <lightning-input
+        label="Variable B"
+        type="number"
+        name="b"
+        required
+        onchange={hanldled}
+      ></lightning-input>
+      <lightning-layout horizontal-align="space">
+        <lightning-layout-item padding="around-small">
+          <lightning-button
+            icon-name="utility:add"
+            variant="brand"
+            name="add"
+            onclick={calculate}
+          ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+          <lightning-button
+            icon-name="utility:dash"
+            variant="brand"
+            name="sub"
+            onclick={calculate}
+          ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+          <lightning-button
+            icon-name="utility:variable"
+            variant="brand"
+            name="mult"
+            onclick={calculate}
+          ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+          <lightning-button
+            label="%"
+            variant="brand"
+            name="divide"
+            onclick={calculate}
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+
+      <b>Output = </b> {output}
+    </div>
+  </lightning-card>
+</template>

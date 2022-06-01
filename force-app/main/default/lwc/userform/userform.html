@@ -1,0 +1,21 @@
+<template>
+<lightning-card title="Registration Form.!">
+<lightning-input type="text" name="FirstName" title="firstname" label="FirstName" onchange={convertdata}></lightning-input>
+<lightning-input type="text" name="LastName" label="LastName" onchange={convertdata}></lightning-input>
+ Thank You {fullname} <lightning-avatar src= 'https://www.lightningdesignsystem.com/assets/images/avatar2.jpg'
+  initials="Sorry"></lightning-avatar>
+  <br>
+  <lightning-button  label="Register"></lightning-button>
+  <lightning-button label="Reset" onclick={restform}></lightning-button>
+  <lightning-button icon-name="utility:download" title="Click for register"></lightning-button>
+ <br>
+ <lightning-formatted-address
+        street="Dextara Digital,Vaishnavi Cynosure"
+        city="Gachebowli,Hyderabad"
+        country="IN"
+        postal-code="500032"
+        show-static-map="true"
+    ></lightning-formatted-address>
+
+</lightning-card>
+</template>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Component Info LWC">
+        <!--Carosal
+        <lightning-carousel>
+            <lightning-carousel-image src="https://www.lightningdesignsystem.com/assets/images/carousel/carousel-01.jpg" alternative-text="Sorry"></lightning-carousel-image>
+            <lightning-carousel-image src="https://miro.medium.com/max/400/1*ON0B-_gy1JK0YbGBOqkB6A.png" alternative-text="Sorry"></lightning-carousel-image>
+            <lightning-carousel-image src="https://www.lightningdesignsystem.com/assets/images/carousel/carousel-02.jpg" alternative-text="Sorry"></lightning-carousel-image>
+            
+        </lightning-carousel> -->
+        
+            <lightning-button variant="brand" label="Reset" title="Reset"></lightning-button>
+            <lightning-button variant="success" label="Success" title="success"></lightning-button>
+            <lightning-button-group>
+                <lightning-button label="grp1"></lightning-button>
+                <lightning-button label="Disable" disabled></lightning-button>
+            </lightning-button-group>
+            <br>
+            <lightning-button-icon-stateful icon-name="utility:like" selected={likeState}
+             alternative-text="Like"></lightning-button-icon-stateful>
+<br>
+<lightning-slider label="Slider1"  value="45"  type="vertical"></lightning-slider>
+<lightning-badge label="Beta"></lightning-badge>
+<br>
+<lightning-file-upload label="fileupload"></lightning-file-upload>
+        
+
+    </lightning-card>    
+</template>
